@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+.slider-show {
+ text-align: center; 
+}
+.slide-container {
+  position: relative; /* Đảm bảo slider có vị trí tương đối */
+  width: 100%; /* Chiều rộng 100% */
+  max-width: 800px; /* Chiều rộng tối đa tùy chỉnh cho slider */
+  margin: 0 auto; /* Canh giữa slider */
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card-buttons {
+  display: flex; /* Hiển thị các nút theo chiều ngang */
+  justify-content: space-between; /* Các nút cách nhau đều */
+  align-items: center; /* Canh chỉnh theo chiều dọc */
+}
+.card-button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 10px;
+  background-color: #007bff; /* Màu nền của nút */
+  color: #fff; /* Màu chữ của nút */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  border: none; /* Loại bỏ viền */
+  border-radius: 5px; /* Bo tròn các góc */
+  cursor: pointer; /* Biến con trỏ thành dấu tay khi di chuột qua nút */
+  transition: background-color 0.2s ease-in-out; /* Hiệu ứng màu nền thay đổi mượt mà */
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Màu nền khi di chuột qua nút */
+}
+.card-title{
+  text-align: center;
+}
+.card-price{
+  text-align: center;
+}
+
